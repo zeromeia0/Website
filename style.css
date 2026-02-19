@@ -1,9 +1,400 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+:root {
+  --bg: #0b0b10;
+  --bg2: #0f0f18;
+  --text: rgba(255, 255, 255, 0.86);
+  --muted: rgba(255, 255, 255, 0.62);
+  --border: rgba(255, 255, 255, 0.12);
+  --card: rgba(20, 20, 30, 0.78);
+  --card2: rgba(24, 24, 36, 0.72);
+  --accent: #f7abc0;
+  --accent2: #a855f7;
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
 
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+  background-color: #0f0f0f;
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 48px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.container {
+  max-width: 1060px;
+}
+
+/* subtle “mouse glow” */
+#cursor-light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(247, 171, 192, 0.04) 0%, rgba(168, 85, 247, 0.035) 40%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(38px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Ensure content stays above cursor glow */
+.page {
+  position: relative;
+  z-index: 1;
+}
+
+/* header */
+.site-title {
+  font-size: clamp(2.2rem, 4.2vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #f7abc0;
+  text-shadow: 0 0 30px rgba(128, 0, 128, 0.9),
+    0 0 40px rgba(128, 0, 128, 0.7),
+    0 0 50px rgba(128, 0, 128, 0.5);
+}
+
+.site-subtitle {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.72);
+  text-shadow: 0 0 10px rgba(128, 0, 128, 0.6),
+    0 0 20px rgba(128, 0, 128, 0.4),
+    0 0 30px rgba(128, 0, 128, 0.2);
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.26);
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.icon-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(247, 171, 192, 0.35);
+}
+
+.icon-btn i {
+  font-size: 1.15rem;
+  color: var(--accent);
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(247, 171, 192, 0.35);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.26);
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.resume-btn i:first-child {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.resume-btn i:last-child {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+}
+
+.resume-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(247, 171, 192, 0.6);
+  color: white;
+}
+
+/* hero */
+.hero {
+  border: 1px solid var(--border);
+  background: rgba(24, 24, 24, 0.55);
+  border-radius: var(--radius-lg);
+  padding: clamp(18px, 2.6vw, 26px);
+  box-shadow: var(--shadow);
+}
+
+.pfp img {
+  width: min(260px, 100%);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.5);
+}
+
+.cover {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.cover strong {
+  color: white;
+}
+
+/* section heading */
+.section-title {
+  margin-top: 28px;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title i {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+/* cards */
+.cardish {
+  border: 1px solid var(--border);
+  background: rgba(24, 24, 24, 0.65);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+/* projects */
+.project-card {
+  height: 100%;
+  transition: transform 170ms ease, border-color 170ms ease, background 170ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(168, 85, 247, 0.32);
+}
+
+.project-media {
+  position: relative;
+}
+
+.project-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-meta {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(0, 0, 0, 0.45);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.82rem;
+  backdrop-filter: blur(8px);
+}
+
+.project-pill i {
+  color: var(--accent);
+}
+
+.project-body {
+  padding: 14px 14px 16px;
+}
+
+.project-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.project-title a {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: white;
+}
+
+.project-title a:hover {
+  color: var(--accent);
+}
+
+.project-desc {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.toggle-btn {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(247, 171, 192, 0.35);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 700;
+  transition: transform 160ms ease, background 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.toggle-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(247, 171, 192, 0.08);
+  color: white;
+  border-color: rgba(247, 171, 192, 0.6);
+}
+
+/* experience / education */
+.education-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 992px) {
+  .education-cards-container {
+    flex-direction: row;
+  }
+}
+
+.education-card {
+  flex: 1 1 0;
+  padding: 18px 18px 16px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: rgba(24, 24, 24, 0.55);
+  min-height: 140px;
+}
+
+.education-card h3 {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.education-card h3 i {
+  color: var(--accent);
+}
+
+.education-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* skills */
+.skills {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(247, 171, 192, 0.35);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.skill-box i {
+  color: var(--accent);
+}
+
+/* about */
+.abt {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+/* 404 page */
+.nf-wrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 40px 16px;
+}
+
+.nf-card {
+  width: min(700px, 100%);
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: rgba(24, 24, 24, 0.6);
+  box-shadow: var(--shadow);
+}
+
+.nf-card h1 {
+  margin: 0 0 8px;
+  font-weight: 900;
+  color: white;
+}
+
+.nf-card p {
+  margin: 0;
+  color: var(--muted);
 }
