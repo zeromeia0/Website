@@ -493,3 +493,128 @@ transform: translateY(2px);
 .current-best-action i {
 transition: transform 0.2s ease;
 }
+
+/* text-only project cards */
+.project-meta-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.project-title > span {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: white;
+}
+
+/* experience timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.timeline-item {
+  padding: 18px 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  background: rgba(24, 24, 24, 0.55);
+}
+
+.timeline-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px 16px;
+}
+
+.timeline-head h3 {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timeline-head h3 i {
+  color: var(--accent);
+}
+
+.timeline-date {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.timeline-sub {
+  margin: 6px 0 0;
+  color: var(--accent);
+  font-size: 0.92rem;
+}
+
+.timeline-item ul {
+  margin: 10px 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.timeline-item li + li {
+  margin-top: 4px;
+}
+
+.small-note {
+  margin-top: 6px !important;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* grouped skills */
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.skill-group {
+  padding: 16px 18px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: rgba(24, 24, 24, 0.55);
+}
+
+.skill-group h3 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-group h3 i {
+  color: var(--accent);
+}
+
+.skill-group .skill-box {
+  padding: 5px 11px;
+  font-size: 0.9rem;
+}
+
+.text-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 400px) {
+  .skill-groups {
+    grid-template-columns: 1fr;
+  }
+}

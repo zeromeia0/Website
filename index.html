@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Vinicius Vaz | Software Engineer Portfolio</title>
+  <title>Vinicius Vaz | Cloud & Software Engineer</title>
+  <meta name="description" content="Vinicius Vaz Cascais: Software Engineer working on cloud-native infrastructure with Kubernetes, Helm, Terraform and AWS. Based in Lisbon." />
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
@@ -25,7 +26,7 @@
 <header class="row align-items-center mt-4">
   <div class="col-md-6 text-start">
     <div class="site-title">Vinicius Vaz</div>
-    <div class="site-subtitle">Software Engineer</div>
+    <div class="site-subtitle">Cloud &amp; Software Engineer</div>
   </div>
 
   <div class="col-md-6">
@@ -36,6 +37,10 @@
 
       <a class="icon-btn" href="https://github.com/zeromeia0" target="_blank" rel="noreferrer" aria-label="GitHub">
         <i class="bi bi-github" aria-hidden="true"></i>
+      </a>
+
+      <a class="icon-btn" href="mailto:vinivc04@gmail.com" aria-label="Email">
+        <i class="bi bi-envelope" aria-hidden="true"></i>
       </a>
 
       <a class="resume-btn" href="Vinicius_Vaz_Cascais_Resume_EN.pdf" target="_blank" rel="noreferrer" aria-label="Resume PDF">
@@ -59,7 +64,10 @@
 
   <div class="col-md-8 col-12 cover">
     <p class="mb-0">
-      Aspiring security engineer currently studying at 42 Lisboa, with side projects related to cybersecurity and a focus on C, C++, and Java.
+      Software Engineer working on <strong>cloud-native infrastructure</strong>. At <strong>Capgemini Engineering</strong>, with Nokia as the client, I run Helm rolling upgrades on Kubernetes for production telecom systems serving <strong>5M+ subscribers</strong> and configure traffic routing for highly available services.
+    </p>
+    <p class="mb-0 mt-3">
+      Systems foundation from 42 Lisboa (C/C++, Linux, processes), with hands-on experience in Docker, Nginx, Terraform and AWS.
     </p>
   </div>
 </section>
@@ -104,7 +112,7 @@
       <p class="project-desc">
         Finance dashboard built for budgeting, expense tracking,
         reporting, financial projections, savings planning, and daily money management.
-        Llocal data storage and optional
+        Local data storage and optional
         AI-powered assistance, built for Linux, MacOS and Windows
       </p>
 
@@ -133,6 +141,53 @@
   <div class="col-12 section-title">
     <i class="bi bi-rocket-takeoff" aria-hidden="true"></i>
     Projects
+  </div>
+
+  <!-- Photo Firefly -->
+  <div class="col-md-6 mb-4">
+    <article class="cardish project-card text-card">
+      <div class="project-body">
+        <div class="project-meta-inline">
+          <span class="project-pill"><i class="bi bi-person" aria-hidden="true"></i>Solo</span>
+          <span class="project-pill"><i class="bi bi-cloud" aria-hidden="true"></i>AWS · Terraform</span>
+        </div>
+
+        <div class="project-title">
+          <span>Photo Firefly</span>
+        </div>
+
+        <p class="project-desc">
+          Cloud-based full-stack photography platform deployed on AWS, with all infrastructure written in Terraform (EC2, EBS, S3, ECR, Route 53, IAM).
+          Least-privilege, SSH-free design: Secrets Manager and SSM for config, IAM instance roles instead of static keys, and a private encrypted S3 bucket for media.
+          Low-cost single-instance architecture with a documented scale-out path to ECS Fargate, ALB and CloudFront.
+          Integrates Stripe Checkout with signed webhooks, Google OAuth/Calendar and SMTP, covered by a Vitest suite.
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <!-- Webserver -->
+  <div class="col-md-6 mb-4">
+    <article class="cardish project-card text-card">
+      <div class="project-body">
+        <div class="project-meta-inline">
+          <span class="project-pill"><i class="bi bi-people" aria-hidden="true"></i>Group</span>
+          <span class="project-pill"><i class="bi bi-code-slash" aria-hidden="true"></i>C++ · HTTP/1.1</span>
+        </div>
+
+        <div class="project-title">
+          <a href="https://github.com/zeromeia0/webserver" target="_blank" rel="noreferrer">Webserver</a>
+
+          <a href="https://github.com/zeromeia0/webserver" target="_blank" rel="noreferrer" aria-label="Open Webserver repository">
+            <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <p class="project-desc">
+          HTTP/1.1 server built from scratch in C++ with no external libraries. A single non-blocking poll() event loop serves multiple ports, static files, uploads and CGI (Python, Node.js), and handles malformed and slow clients.
+        </p>
+      </div>
+    </article>
   </div>
 
   <!-- Push Swap -->
@@ -207,7 +262,7 @@
         </div>
 
         <p class="project-desc">
-          Unix-like shell in C that handles processes, pipes, redirections, environment variables, built-in commands, and logical operators.
+          Unix-like shell in C with processes, pipes, redirections, environment variables and built-ins, plus logical operators (&amp;&amp;, ||) and wildcard expansion.
         </p>
       </div>
     </article>
@@ -327,7 +382,7 @@
           </div>
 
           <p class="project-desc">
-            Docker-based system administration project using Nginx, WordPress, MariaDB, Docker Compose, and containerized services.
+            Multi-container infrastructure designed and deployed with Docker and Docker Compose: Nginx (TLS), WordPress and MariaDB, each in its own container.
           </p>
         </div>
       </article>
@@ -352,30 +407,30 @@
   </div>
 
   <div class="col-12 mt-4">
-    <div class="row education-cards-container">
-      <div class="col-12 col-md-4 education-card">
-        <h3>
-          <i class="bi bi-building" aria-hidden="true"></i>
-          Ebinar | 2025
-        </h3>
-        <p>Full Stack Developer | System Administration</p>
-      </div>
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-head">
+          <h3><i class="bi bi-cloud-check" aria-hidden="true"></i>Software Engineer · Capgemini Engineering</h3>
+          <span class="timeline-date">Jul 2026 – Present · Lisbon</span>
+        </div>
+        <p class="timeline-sub">Client: Nokia · Cloud-native telecom infrastructure</p>
+        <ul>
+          <li>Execute Helm rolling upgrades on Kubernetes for 5G/4G subscriber registers (AUSF/UDM/HSS/HLR) in a network serving 5M+ subscribers, about 2 production rollouts per month with a zero-downtime design.</li>
+          <li>Troubleshoot deployment issues during live upgrades using kubectl and logs.</li>
+          <li>Configure traffic routing with Kubernetes Ingress and internal networking to support high availability across sites.</li>
+          <li>Use internal LLM tools in the incident troubleshooting workflow, cutting diagnosis time by about 3 hours.</li>
+        </ul>
+      </article>
 
-      <div class="col-12 col-md-4 education-card">
-        <h3>
-          <i class="bi bi-building" aria-hidden="true"></i>
-          Hub Media | 2024
-        </h3>
-        <p>Web Developer</p>
-      </div>
-
-      <div class="col-12 col-md-4 education-card">
-        <h3>
-          <i class="bi bi-camera-reels" aria-hidden="true"></i>
-          Real Fado | 2023
-        </h3>
-        <p>Photographer | Video and Photo Editing</p>
-      </div>
+      <article class="timeline-item">
+        <div class="timeline-head">
+          <h3><i class="bi bi-building" aria-hidden="true"></i>Full Stack Developer (Intern) · Ebinar</h3>
+          <span class="timeline-date">Jul 2025 – Oct 2025 · Lisbon</span>
+        </div>
+        <ul>
+          <li>Built an Excel-to-MySQL import tool with filterable logs to replace manual imports, reducing manual import effort by about 25% and cutting data inconsistencies.</li>
+        </ul>
+      </article>
     </div>
   </div>
 </section>
@@ -394,7 +449,8 @@
           <i class="bi bi-laptop" aria-hidden="true"></i>
           42 Lisboa
         </h3>
-        <p>Software Engineering Cursus</p>
+        <p>Software Engineering Programme · Present</p>
+        <p class="small-note">C/C++, OOP, system fundamentals and low-level memory management</p>
       </div>
 
       <div class="col-12 col-md-4 education-card">
@@ -402,7 +458,8 @@
           <i class="bi bi-diagram-3" aria-hidden="true"></i>
           IEFP
         </h3>
-        <p>Technological Specialization Course in Network and Information Systems Management</p>
+        <p>Network and Systems Administration, Technical Specialist Course · 2025</p>
+        <p class="small-note">Built and maintained Windows and Linux servers; configured networks with Cisco Packet Tracer</p>
       </div>
 
       <div class="col-12 col-md-4 education-card">
@@ -424,21 +481,109 @@
   </div>
 
   <div class="col-12 mt-4">
-    <div class="skills">
-      <div class="skill-box"><i class="bi bi-terminal" aria-hidden="true"></i>Linux</div>
-      <div class="skill-box"><i class="bi bi-router" aria-hidden="true"></i>Networking</div>
-      <div class="skill-box"><i class="bi bi-command" aria-hidden="true"></i>Bash</div>
-      <div class="skill-box"><i class="bi bi-git" aria-hidden="true"></i>Git</div>
-      <div class="skill-box"><i class="bi bi-code" aria-hidden="true"></i>C</div>
-      <div class="skill-box"><i class="bi bi-code" aria-hidden="true"></i>C++</div>
-      <div class="skill-box"><i class="bi bi-cup-hot" aria-hidden="true"></i>Java</div>
-      <div class="skill-box"><i class="bi bi-globe2" aria-hidden="true"></i>PHP</div>
-      <div class="skill-box"><i class="bi bi-filetype-html" aria-hidden="true"></i>HTML</div>
-      <div class="skill-box"><i class="bi bi-filetype-css" aria-hidden="true"></i>CSS</div>
-      <div class="skill-box"><i class="bi bi-database" aria-hidden="true"></i>SQL</div>
-      <div class="skill-box"><i class="bi bi-hdd-network" aria-hidden="true"></i>Nginx</div>
-      <div class="skill-box"><i class="bi bi-box" aria-hidden="true"></i>Docker</div>
-      <div class="skill-box"><i class="bi bi-boxes" aria-hidden="true"></i>Containers</div>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3><i class="bi bi-cloud" aria-hidden="true"></i>Cloud &amp; Containers</h3>
+        <div class="skills">
+          <span class="skill-box">Kubernetes</span>
+          <span class="skill-box">RedHat OpenShift</span>
+          <span class="skill-box">Docker</span>
+          <span class="skill-box">Helm</span>
+          <span class="skill-box">Terraform</span>
+          <span class="skill-box">AWS</span>
+          <span class="skill-box">Azure</span>
+          <span class="skill-box">Google Cloud</span>
+          <span class="skill-box">VMware</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3><i class="bi bi-hdd-stack" aria-hidden="true"></i>Systems &amp; Infrastructure</h3>
+        <div class="skills">
+          <span class="skill-box">Linux (RHEL, Arch, Ubuntu, Debian)</span>
+          <span class="skill-box">Server Administration</span>
+          <span class="skill-box">Nginx</span>
+          <span class="skill-box">CI/CD Pipelines</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3><i class="bi bi-router" aria-hidden="true"></i>Networking</h3>
+        <div class="skills">
+          <span class="skill-box">TCP/IP</span>
+          <span class="skill-box">DNS</span>
+          <span class="skill-box">HTTP</span>
+          <span class="skill-box">Kubernetes Ingress</span>
+          <span class="skill-box">Cisco Packet Tracer</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3><i class="bi bi-code-slash" aria-hidden="true"></i>Languages</h3>
+        <div class="skills">
+          <span class="skill-box">C</span>
+          <span class="skill-box">C++</span>
+          <span class="skill-box">Go</span>
+          <span class="skill-box">Bash</span>
+          <span class="skill-box">PHP</span>
+          <span class="skill-box">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3><i class="bi bi-database" aria-hidden="true"></i>Databases</h3>
+        <div class="skills">
+          <span class="skill-box">MySQL / MariaDB</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3><i class="bi bi-tools" aria-hidden="true"></i>Tools</h3>
+        <div class="skills">
+          <span class="skill-box">Git</span>
+          <span class="skill-box">GDB</span>
+          <span class="skill-box">Valgrind</span>
+          <span class="skill-box">kubectl</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3><i class="bi bi-cpu" aria-hidden="true"></i>AI &amp; Developer Tools</h3>
+        <div class="skills">
+          <span class="skill-box">Claude Code</span>
+          <span class="skill-box">Cursor</span>
+          <span class="skill-box">Ollama (local LLMs)</span>
+          <span class="skill-box">ChatGPT</span>
+          <span class="skill-box">Perplexity</span>
+          <span class="skill-box">Machine Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications & Languages -->
+<section class="row mt-5">
+  <div class="col-12 section-title">
+    <i class="bi bi-patch-check" aria-hidden="true"></i>
+    Certifications &amp; Languages
+  </div>
+
+  <div class="col-12 mt-4">
+    <div class="row education-cards-container">
+      <div class="col-12 col-md-4 education-card">
+        <h3><i class="bi bi-award" aria-hidden="true"></i>Nokia Kubernetes</h3>
+        <p>Level 3</p>
+      </div>
+
+      <div class="col-12 col-md-4 education-card">
+        <h3><i class="bi bi-award" aria-hidden="true"></i>Nokia CNF OpenShift</h3>
+        <p>Level 1</p>
+      </div>
+
+      <div class="col-12 col-md-4 education-card">
+        <h3><i class="bi bi-award" aria-hidden="true"></i>Azure Foundations</h3>
+        <p>Level 1</p>
+      </div>
+
+      <div class="col-12 col-md-4 education-card">
+        <h3><i class="bi bi-translate" aria-hidden="true"></i>Languages</h3>
+        <p>Portuguese (native) · English (C2) · French (A2)</p>
+      </div>
     </div>
   </div>
 </section>
@@ -452,19 +597,19 @@
 
   <div class="col-12 mt-4">
     <p>
-      Hi! I'm Vinicius Vaz Cascais, an aspiring Junior Software / Systems Engineer currently studying Software Engineering at 42 Lisboa.
+      Hi! I'm Vinicius Vaz Cascais, a Software Engineer based in Lisbon, currently focused on <strong>cloud and cloud-native infrastructure</strong>.
     </p>
 
     <p>
-      I started programming through game development, which led me to software engineering and a strong interest in C, Linux, and low-level systems.
+      Day to day I work with Kubernetes, Helm and OpenShift on production telecom platforms, where upgrades have to land with zero downtime and every routing change matters. On the side I build and deploy my own projects on AWS with Terraform, aiming for secure, least-privilege and low-cost designs.
     </p>
 
     <p>
-      I enjoy understanding how software interacts with the operating system, with a growing focus on reliability, performance, and secure system design.
+      My foundation comes from 42 Lisboa and a background in network and systems administration: C/C++, Linux, processes and networking. Knowing what happens underneath the containers is what I enjoy most about cloud work.
     </p>
 
     <p>
-      For more details, feel free to check my resume and links above. Don’t hesitate to reach out.
+      For more details, check my resume and links above, or reach me at <a class="text-link" href="mailto:vinivc04@gmail.com">vinivc04@gmail.com</a>.
     </p>
   </div>
 </section>
