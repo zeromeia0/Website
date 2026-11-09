@@ -1,240 +1,529 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Vinicius Vaz | Software Engineer Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
-  <link href="style.css" rel="stylesheet"/>
-  <link rel="icon" href="logo.ico" type="image/x-icon"/>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" /></noscript>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="icon" href="logo.ico" type="image/x-icon" />
 </head>
+
 <body>
   <div id="cursor-light"></div>
-  <div class="container page">
-    <!-- Header -->
-    <div class="row align-items-center mt-4">
-      <div class="col-md-6 text-start">
-        <div class="site-title">Vinicius Vaz</div>
-        <div class="site-subtitle">Software Engineer</div>
+
+  <main class="container page">
+
+<!-- Header -->
+<header class="row align-items-center mt-4">
+  <div class="col-md-6 text-start">
+    <div class="site-title">Vinicius Vaz</div>
+    <div class="site-subtitle">Software Engineer</div>
+  </div>
+
+  <div class="col-md-6">
+    <nav class="socials" aria-label="Social links">
+      <a class="icon-btn" href="https://www.linkedin.com/in/vinicius-vaz-02a966240/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <i class="bi bi-linkedin" aria-hidden="true"></i>
+      </a>
+
+      <a class="icon-btn" href="https://github.com/zeromeia0" target="_blank" rel="noreferrer" aria-label="GitHub">
+        <i class="bi bi-github" aria-hidden="true"></i>
+      </a>
+
+      <a class="resume-btn" href="Vinicius_Vaz_Cascais_Resume_EN.pdf" target="_blank" rel="noreferrer" aria-label="Resume PDF">
+        <i class="bi bi-file-earmark-person" aria-hidden="true"></i>
+        <span>Resume</span>
+        <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="row align-items-center mt-5 hero g-4">
+  <div class="col-md-4 col-12 text-center pfp">
+    <picture>
+      <source srcset="media/pfp.avif" type="image/avif" />
+      <source srcset="media/pfp.webp" type="image/webp" />
+      <img src="pfp.png" alt="Vinicius Vaz profile picture" width="520" height="520" fetchpriority="high" decoding="async" />
+    </picture>
+  </div>
+
+  <div class="col-md-8 col-12 cover">
+    <p class="mb-0">
+      Aspiring security engineer currently studying at 42 Lisboa, with side projects related to cybersecurity and a focus on C, C++, and Java.
+    </p>
+  </div>
+</section>
+
+<!-- Current Best Project -->
+<section class="row mt-5">
+  <div class="col-12 section-title">
+    <i class="bi bi-stars" aria-hidden="true"></i>
+    Current Best Project
+  </div>
+
+  <div class="col-12 mt-4">
+<div class="col-12 mb-4">
+  <article class="cardish project-card featured-project">
+
+    <div class="project-body">
+
+      <div class="featured-badge">
+        <i class="bi bi-stars"></i>
+        Current Best Project
       </div>
-      <div class="col-md-6">
-        <div class="socials">
-          <a class="icon-btn" href="https://www.linkedin.com/in/vinicius-vaz-02a966240/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <i class="bi bi-linkedin" aria-hidden="true"></i>
-          </a>
-          <a class="icon-btn" href="https://github.com/zeromeia0" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <i class="bi bi-github" aria-hidden="true"></i>
-          </a>
-          <a class="resume-btn" href="Vinicius_Vaz_Cascais_Resume_2026.pdf" target="_blank" rel="noreferrer" aria-label="Resume (PDF)">
-            <i class="bi bi-file-earmark-person" aria-hidden="true"></i>
-            <span>Resume</span>
+
+      <div class="project-title">
+        <a
+          href="https://github.com/zeromeia0/webable/releases/download/Verified_Releases/Webable-Setup-1.0.0.exe"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Webable
+        </a>
+
+        <a
+          href="https://github.com/zeromeia0/webable/releases/download/Verified_Releases/Webable-Setup-1.0.0.exe"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Download Webable"
+        >
+          <i class="bi bi-download"></i>
+        </a>
+      </div>
+
+      <p class="project-desc">
+        Finance dashboard built for budgeting, expense tracking,
+        reporting, financial projections, savings planning, and daily money management.
+        Llocal data storage and optional
+        AI-powered assistance, built for Linux, MacOS and Windows
+      </p>
+
+      <div class="mt-4">
+        <a
+          class="resume-btn"
+          href="https://github.com/zeromeia0/webable/releases/download/Verified_Releases/Webable-Setup-1.0.0.exe"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i class="bi bi-download"></i>
+          <span>Download Webable</span>
+          <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </article>
+</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="row mt-5">
+  <div class="col-12 section-title">
+    <i class="bi bi-rocket-takeoff" aria-hidden="true"></i>
+    Projects
+  </div>
+
+  <!-- Push Swap -->
+  <div class="col-md-6 mb-4">
+    <article class="cardish project-card">
+      <div class="project-media">
+        <picture>
+          <source srcset="media/push_swap_visualizer.avif" type="image/avif" />
+          <source srcset="media/push_swap_visualizer.webp" type="image/webp" />
+          <img src="push_swap_visualizer.gif" alt="Push Swap project preview" width="960" height="540" loading="lazy" decoding="async" />
+        </picture>
+
+        <div class="project-meta">
+          <span class="project-pill">
+            <i class="bi bi-person" aria-hidden="true"></i>
+            Solo
+          </span>
+
+          <span class="project-pill">
+            <i class="bi bi-code-slash" aria-hidden="true"></i>
+            C · 1 month
+          </span>
+        </div>
+      </div>
+
+      <div class="project-body">
+        <div class="project-title">
+          <a href="https://github.com/zeromeia0/push_swap" target="_blank" rel="noreferrer">Push Swap</a>
+
+          <a href="https://github.com/zeromeia0/push_swap" target="_blank" rel="noreferrer" aria-label="Open Push Swap repository">
             <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
           </a>
         </div>
+
+        <p class="project-desc">
+          Sorting algorithm project that sorts a stack of integers using a limited set of operations. The goal is to sort the numbers in ascending order with the fewest possible moves.
+        </p>
       </div>
-    </div>
-    <!-- Cover -->
-    <div class="row align-items-center mt-5 hero g-4">
-      <div class="col-md-4 col-12 text-center pfp">
-        <img src="pfp.png" alt="Profile Picture">
-      </div>
-      <div class="col-md-8 col-12 cover">
-        <p class="mb-0">Prospect security engineer currently studying at 42 Lisbon along with side projects related to cybersecurity, focusing on C, C++ and Java</p>
-      </div>
-    </div>
-    <!-- Projects -->
-    <div class="row mt-5">
-      <div class="col-12 section-title"><i class="bi bi-rocket-takeoff" aria-hidden="true"></i>Projects</div>
-      <!-- First 2 Projects -->
-      <div class="col-md-6 mb-4">
-        <div class="cardish project-card">
-          <div class="project-media">
-          <img src="push_swap_visualizer.gif" alt="Push Swap">
-            <div class="project-meta">
-              <span class="project-pill"><i class="bi bi-person" aria-hidden="true"></i>Solo</span>
-              <span class="project-pill"><i class="bi bi-code-slash" aria-hidden="true"></i>C · 1 month</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-title">
-              <a href="https://github.com/zeromeia0/push_swap" target="_blank" rel="noreferrer">Push Swap</a>
-              <a href="https://github.com/zeromeia0/push_swap" target="_blank" rel="noreferrer" aria-label="Open repository">
-                <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
-              </a>
-            </div>
-            <div class="project-desc">Sorting algorithm project that sorts a stack of integers using a limited set of operations. The goal is to sort the numbers in ascending order with the fewest possible operations.</div>
-          </div>
+    </article>
+  </div>
+
+  <!-- Minishell -->
+  <div class="col-md-6 mb-4">
+    <article class="cardish project-card">
+      <div class="project-media">
+        <picture>
+          <source srcset="media/last_minishell.avif" type="image/avif" />
+          <source srcset="media/last_minishell.webp" type="image/webp" />
+          <img src="last_minishell.gif" alt="Minishell project preview" width="960" height="540" loading="lazy" decoding="async" />
+        </picture>
+
+        <div class="project-meta">
+          <span class="project-pill">
+            <i class="bi bi-people" aria-hidden="true"></i>
+            Group of 2
+          </span>
+
+          <span class="project-pill">
+            <i class="bi bi-code-slash" aria-hidden="true"></i>
+            C · 2 months
+          </span>
         </div>
       </div>
-      <div class="col-md-6 mb-4">
-        <div class="cardish project-card">
-          <div class="project-media">
-          <img src="last_minishell.gif" alt="Minishell">
-            <div class="project-meta">
-              <span class="project-pill"><i class="bi bi-people" aria-hidden="true"></i>Group (2)</span>
-              <span class="project-pill"><i class="bi bi-code-slash" aria-hidden="true"></i>C · 2 months</span>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-title">
-              <a href="https://github.com/zeromeia0/minishell" target="_blank" rel="noreferrer">Minishell</a>
-              <a href="https://github.com/zeromeia0/minishell" target="_blank" rel="noreferrer" aria-label="Open repository">
-                <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
-              </a>
-            </div>
-            <div class="project-desc">Unix-like shell in C that handles processes, pipes, redirections, environment variables, built-in commands and logical operations.</div>
+
+      <div class="project-body">
+        <div class="project-title">
+          <a href="https://github.com/zeromeia0/minishell" target="_blank" rel="noreferrer">Minishell</a>
+
+          <a href="https://github.com/zeromeia0/minishell" target="_blank" rel="noreferrer" aria-label="Open Minishell repository">
+            <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <p class="project-desc">
+          Unix-like shell in C that handles processes, pipes, redirections, environment variables, built-in commands, and logical operators.
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <!-- Hidden Projects -->
+  <div id="more-projects" class="row d-none">
+
+    <!-- Philosophers -->
+    <div class="col-md-6 mb-4">
+      <article class="cardish project-card">
+        <div class="project-media">
+          <picture>
+            <source data-srcset="media/philo.avif" type="image/avif" />
+            <source data-srcset="media/philo.webp" type="image/webp" />
+            <img data-src="philo.gif" alt="Philosophers project preview" width="960" height="540" loading="lazy" decoding="async" />
+          </picture>
+
+          <div class="project-meta">
+            <span class="project-pill">
+              <i class="bi bi-person" aria-hidden="true"></i>
+              Solo
+            </span>
+
+            <span class="project-pill">
+              <i class="bi bi-code-slash" aria-hidden="true"></i>
+              C · 2 weeks
+            </span>
           </div>
         </div>
-      </div>
-      <!-- Hidden More Projects -->
-      <div id="more-projects" class="row" style="display: none;">
-        <div class="col-md-6 mb-4">
-          <div class="cardish project-card">
-            <div class="project-media">
-              <img src="philo.gif" alt="Philosophers">
-              <div class="project-meta">
-                <span class="project-pill"><i class="bi bi-person" aria-hidden="true"></i>Solo</span>
-                <span class="project-pill"><i class="bi bi-code-slash" aria-hidden="true"></i>C · 2 weeks</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-title">
-                <a href="https://github.com/zeromeia0/philosophers" target="_blank" rel="noreferrer">Philosophers</a>
-                <a href="https://github.com/zeromeia0/philosophers" target="_blank" rel="noreferrer" aria-label="Open repository">
-                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="project-desc">Multi-thread program regarding the philosopher in the dinning table problem.</div>
-            </div>
+
+        <div class="project-body">
+          <div class="project-title">
+            <a href="https://github.com/zeromeia0/philosophers" target="_blank" rel="noreferrer">Philosophers</a>
+
+            <a href="https://github.com/zeromeia0/philosophers" target="_blank" rel="noreferrer" aria-label="Open Philosophers repository">
+              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+            </a>
           </div>
+
+          <p class="project-desc">
+            Multi-threaded program based on the dining philosophers problem, focused on threads, mutexes, timing, and synchronization.
+          </p>
         </div>
-        <div class="col-md-6 mb-4">
-          <div class="cardish project-card">
-            <div class="project-media">
-              <img src="so_long.gif" alt="So_long">
-              <div class="project-meta">
-                <span class="project-pill"><i class="bi bi-person" aria-hidden="true"></i>Solo</span>
-                <span class="project-pill"><i class="bi bi-code-slash" aria-hidden="true"></i>C · 1 month</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-title">
-                <a href="https://github.com/zeromeia0/so_long" target="_blank" rel="noreferrer">So_long</a>
-                <a href="https://github.com/zeromeia0/so_long" target="_blank" rel="noreferrer" aria-label="Open repository">
-                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="project-desc">Small 2D game with minilibx library working with textures, sprites, and some other gameplay elements.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- View More/Less Button -->
-      <div class="col-12 text-center mt-3">
-        <button id="toggle-projects-btn" class="toggle-btn">
-          <span>View More</span>
-          <i class="bi bi-chevron-down ms-1" aria-hidden="true"></i>
-        </button>
-      </div>
+      </article>
     </div>
-    <!-- Work Experience -->
-    <div class="row mt-5">
-      <div class="col-12 section-title"><i class="bi bi-briefcase" aria-hidden="true"></i>Experience</div>
+
+    <!-- So_long -->
+    <div class="col-md-6 mb-4">
+      <article class="cardish project-card">
+        <div class="project-media">
+          <picture>
+            <source data-srcset="media/so_long.avif" type="image/avif" />
+            <source data-srcset="media/so_long.webp" type="image/webp" />
+            <img data-src="so_long.gif" alt="So_long project preview" width="960" height="540" loading="lazy" decoding="async" />
+          </picture>
+
+          <div class="project-meta">
+            <span class="project-pill">
+              <i class="bi bi-person" aria-hidden="true"></i>
+              Solo
+            </span>
+
+            <span class="project-pill">
+              <i class="bi bi-code-slash" aria-hidden="true"></i>
+              C · 1 month
+            </span>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-title">
+            <a href="https://github.com/zeromeia0/so_long" target="_blank" rel="noreferrer">So_long</a>
+
+            <a href="https://github.com/zeromeia0/so_long" target="_blank" rel="noreferrer" aria-label="Open So_long repository">
+              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <p class="project-desc">
+            Small 2D game built with the MiniLibX library, working with textures, sprites, maps, movement, and basic gameplay elements.
+          </p>
+        </div>
+      </article>
     </div>
-    <div class="row mt-5 education-cards-container">
+
+    <!-- Inception -->
+    <div class="col-md-6 mb-4">
+      <article class="cardish project-card">
+        <div class="project-media">
+          <picture>
+            <source data-srcset="media/inception.avif" type="image/avif" />
+            <source data-srcset="media/inception.webp" type="image/webp" />
+            <img data-src="inception.gif" alt="Inception project preview" width="400" height="226" loading="lazy" decoding="async" />
+          </picture>
+
+          <div class="project-meta">
+            <span class="project-pill">
+              <i class="bi bi-person" aria-hidden="true"></i>
+              Solo
+            </span>
+
+            <span class="project-pill">
+              <i class="bi bi-boxes" aria-hidden="true"></i>
+              Docker · 3 weeks
+            </span>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-title">
+            <a href="https://github.com/zeromeia0/Inception" target="_blank" rel="noreferrer">Inception</a>
+
+            <a href="https://github.com/zeromeia0/Inception" target="_blank" rel="noreferrer" aria-label="Open Inception repository">
+              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <p class="project-desc">
+            Docker-based system administration project using Nginx, WordPress, MariaDB, Docker Compose, and containerized services.
+          </p>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+  <!-- View More/Less Button -->
+  <div class="col-12 text-center mt-3">
+    <button id="toggle-projects-btn" class="toggle-btn" type="button">
+      <span>View More</span>
+      <i class="bi bi-chevron-down ms-1" aria-hidden="true"></i>
+    </button>
+  </div>
+</section>
+
+<!-- Experience -->
+<section class="row mt-5">
+  <div class="col-12 section-title">
+    <i class="bi bi-briefcase" aria-hidden="true"></i>
+    Experience
+  </div>
+
+  <div class="col-12 mt-4">
+    <div class="row education-cards-container">
       <div class="col-12 col-md-4 education-card">
-        <h3><i class="bi bi-building" aria-hidden="true"></i>Ebinar | 2025</h3>
+        <h3>
+          <i class="bi bi-building" aria-hidden="true"></i>
+          Ebinar | 2025
+        </h3>
         <p>Full Stack Developer | System Administration</p>
       </div>
+
       <div class="col-12 col-md-4 education-card">
-        <h3><i class="bi bi-building" aria-hidden="true"></i>Hub Media | 2024</h3>
+        <h3>
+          <i class="bi bi-building" aria-hidden="true"></i>
+          Hub Media | 2024
+        </h3>
         <p>Web Developer</p>
       </div>
+
       <div class="col-12 col-md-4 education-card">
-        <h3><i class="bi bi-camera-reels" aria-hidden="true"></i>Real Fado | 2023</h3>
+        <h3>
+          <i class="bi bi-camera-reels" aria-hidden="true"></i>
+          Real Fado | 2023
+        </h3>
         <p>Photographer | Video and Photo Editing</p>
       </div>
     </div>
-    
-    <!-- Education -->
-    <div class="row mt-5">
-      <div class="col-12 section-title"><i class="bi bi-mortarboard" aria-hidden="true"></i>Education</div>
-    </div>
-    <div class="row mt-5 education-cards-container">
+  </div>
+</section>
+
+<!-- Education -->
+<section class="row mt-5">
+  <div class="col-12 section-title">
+    <i class="bi bi-mortarboard" aria-hidden="true"></i>
+    Education
+  </div>
+
+  <div class="col-12 mt-4">
+    <div class="row education-cards-container">
       <div class="col-12 col-md-4 education-card">
-        <h3><i class="bi bi-laptop" aria-hidden="true"></i>42 Lisboa</h3>
+        <h3>
+          <i class="bi bi-laptop" aria-hidden="true"></i>
+          42 Lisboa
+        </h3>
         <p>Software Engineering Cursus</p>
       </div>
+
       <div class="col-12 col-md-4 education-card">
-        <h3><i class="bi bi-diagram-3" aria-hidden="true"></i>IEFP</h3>
-        <p>Technological Specialization Courses in Network and Information Systems Management</p>
+        <h3>
+          <i class="bi bi-diagram-3" aria-hidden="true"></i>
+          IEFP
+        </h3>
+        <p>Technological Specialization Course in Network and Information Systems Management</p>
       </div>
+
       <div class="col-12 col-md-4 education-card">
-        <h3><i class="bi bi-palette2" aria-hidden="true"></i>EPAD</h3>
+        <h3>
+          <i class="bi bi-palette2" aria-hidden="true"></i>
+          EPAD
+        </h3>
         <p>Professional High School Diploma in Multimedia</p>
       </div>
     </div>
-    <!-- Skills -->
-    <div class="row mt-5">
-      <div class="col-12 section-title"><i class="bi bi-braces-asterisk" aria-hidden="true"></i>Technical Skills</div>
-      <div class="col-md-12">
-        <div class="skills">
-          <div class="skill-box"><i class="bi bi-terminal" aria-hidden="true"></i>Linux</div>
-          <div class="skill-box"><i class="bi bi-router" aria-hidden="true"></i>Network</div>
-          <div class="skill-box"><i class="bi bi-command" aria-hidden="true"></i>Bash</div>
-          <div class="skill-box"><i class="bi bi-git" aria-hidden="true"></i>Git</div>
-          <div class="skill-box"><i class="bi bi-code" aria-hidden="true"></i>C</div>
-          <div class="skill-box"><i class="bi bi-code" aria-hidden="true"></i>C++</div>
-          <div class="skill-box"><i class="bi bi-globe2" aria-hidden="true"></i>PHP</div>
-          <div class="skill-box"><i class="bi bi-filetype-html" aria-hidden="true"></i>HTML</div>
-          <div class="skill-box"><i class="bi bi-filetype-css" aria-hidden="true"></i>CSS</div>
-          <div class="skill-box"><i class="bi bi-database" aria-hidden="true"></i>SQL</div>
-          <div class="skill-box"><i class="bi bi-hdd-network" aria-hidden="true"></i>Nginx</div>
-          <div class="skill-box"><i class="bi bi-boxes" aria-hidden="true"></i>Containers</div>
-          <div class="skill-box"><i class="bi bi-box" aria-hidden="true"></i>Docker</div>
-        </div>
-      </div>
-    </div>
-    <!-- About Me -->
-    <div class="row mt-5 abt">
-      <div class="col-12 section-title"><i class="bi bi-person-heart" aria-hidden="true"></i>About Me</div>
-      <div class="col-12">
-        Hi! I'm Vinicius Vaz Cascais, an aspiring
-        Junior Software / Systems Engineer currently studying
-        Software Engineering at 42 Lisboa.<br><br>
-        I started programming through game development, which led me to software
-        engineering and a strong interest in C, Linux, and low-level systems.
-        I enjoy understanding how software interacts with the operating system, with a
-        growing focus on reliability, performance, and secure system design.<br><br>
-        For more details, feel free to check my resume and links above — don’t hesitate
-        to reach out.
-	</br>
-	</br>
-      </div>
-     <br>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="row mt-5">
+  <div class="col-12 section-title">
+    <i class="bi bi-braces-asterisk" aria-hidden="true"></i>
+    Technical Skills
+  </div>
+
+  <div class="col-12 mt-4">
+    <div class="skills">
+      <div class="skill-box"><i class="bi bi-terminal" aria-hidden="true"></i>Linux</div>
+      <div class="skill-box"><i class="bi bi-router" aria-hidden="true"></i>Networking</div>
+      <div class="skill-box"><i class="bi bi-command" aria-hidden="true"></i>Bash</div>
+      <div class="skill-box"><i class="bi bi-git" aria-hidden="true"></i>Git</div>
+      <div class="skill-box"><i class="bi bi-code" aria-hidden="true"></i>C</div>
+      <div class="skill-box"><i class="bi bi-code" aria-hidden="true"></i>C++</div>
+      <div class="skill-box"><i class="bi bi-cup-hot" aria-hidden="true"></i>Java</div>
+      <div class="skill-box"><i class="bi bi-globe2" aria-hidden="true"></i>PHP</div>
+      <div class="skill-box"><i class="bi bi-filetype-html" aria-hidden="true"></i>HTML</div>
+      <div class="skill-box"><i class="bi bi-filetype-css" aria-hidden="true"></i>CSS</div>
+      <div class="skill-box"><i class="bi bi-database" aria-hidden="true"></i>SQL</div>
+      <div class="skill-box"><i class="bi bi-hdd-network" aria-hidden="true"></i>Nginx</div>
+      <div class="skill-box"><i class="bi bi-box" aria-hidden="true"></i>Docker</div>
+      <div class="skill-box"><i class="bi bi-boxes" aria-hidden="true"></i>Containers</div>
     </div>
   </div>
-  <!-- JS -->
+</section>
+
+<!-- About Me -->
+<section class="row mt-5 abt">
+  <div class="col-12 section-title">
+    <i class="bi bi-person-heart" aria-hidden="true"></i>
+    About Me
+  </div>
+
+  <div class="col-12 mt-4">
+    <p>
+      Hi! I'm Vinicius Vaz Cascais, an aspiring Junior Software / Systems Engineer currently studying Software Engineering at 42 Lisboa.
+    </p>
+
+    <p>
+      I started programming through game development, which led me to software engineering and a strong interest in C, Linux, and low-level systems.
+    </p>
+
+    <p>
+      I enjoy understanding how software interacts with the operating system, with a growing focus on reliability, performance, and secure system design.
+    </p>
+
+    <p>
+      For more details, feel free to check my resume and links above. Don’t hesitate to reach out.
+    </p>
+  </div>
+</section>
+
+  </main>
+
+  <!-- JavaScript -->
+
   <script>
-const cursorLight = document.getElementById("cursor-light");
-// Cursor glow
-document.addEventListener("mousemove", (e) => {
-  cursorLight.style.top = `${e.clientY}px`;
-  cursorLight.style.left = `${e.clientX}px`;
-});
-// Toggle projects button
-const toggleBtn = document.getElementById('toggle-projects-btn');
-const moreProjects = document.getElementById('more-projects');
-const toggleBtnLabel = toggleBtn.querySelector('span');
-const toggleBtnIcon = toggleBtn.querySelector('i');
-let isExpanded = false;
-toggleBtn.addEventListener('click', () => {
-  isExpanded = !isExpanded;
-  moreProjects.style.display = isExpanded ? 'flex' : 'none';
-  toggleBtnLabel.textContent = isExpanded ? 'View Less' : 'View More';
-  toggleBtnIcon.className = isExpanded ? 'bi bi-chevron-up ms-1' : 'bi bi-chevron-down ms-1';
-});
+    const cursorLight = document.getElementById("cursor-light");
+
+    // Move with transform (GPU-composited, no repaint), at most once per frame
+    let cursorX = 0;
+    let cursorY = 0;
+    let cursorQueued = false;
+
+    document.addEventListener("mousemove", (event) => {
+      if (!cursorLight) return;
+
+      cursorX = event.clientX;
+      cursorY = event.clientY;
+      if (cursorQueued) return;
+
+      cursorQueued = true;
+      requestAnimationFrame(() => {
+        cursorLight.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%)`;
+        cursorQueued = false;
+      });
+    }, { passive: true });
+
+    const toggleBtn = document.getElementById("toggle-projects-btn");
+    const moreProjects = document.getElementById("more-projects");
+
+    if (toggleBtn && moreProjects) {
+      const toggleBtnLabel = toggleBtn.querySelector("span");
+      const toggleBtnIcon = toggleBtn.querySelector("i");
+
+      toggleBtn.addEventListener("click", () => {
+        const isExpanded = !moreProjects.classList.contains("d-none");
+
+        // Hidden previews only start downloading the first time they are shown
+        moreProjects.querySelectorAll("[data-srcset]").forEach((el) => {
+          el.srcset = el.dataset.srcset;
+          el.removeAttribute("data-srcset");
+        });
+        moreProjects.querySelectorAll("img[data-src]").forEach((img) => {
+          img.src = img.dataset.src;
+          img.removeAttribute("data-src");
+        });
+
+        moreProjects.classList.toggle("d-none", isExpanded);
+
+        toggleBtnLabel.textContent = isExpanded ? "View More" : "View Less";
+        toggleBtnIcon.className = isExpanded
+          ? "bi bi-chevron-down ms-1"
+          : "bi bi-chevron-up ms-1";
+      });
+    }
   </script>
+
 </body>
 </html>
